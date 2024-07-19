@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(180deg,#FFF6FF,#B17BF1  );
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #B17BF1;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.container{
+    margin-block:2%;
+    background: RGB(157, 136, 178);
+    width:fit-content;
+    padding:30px;
+    margin-inline: auto;
+    border-radius: 10px;
+}
+
+.todo-input{
+    display: flex;
+    color: #FFF6FF;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media screen and (max-width:600px){
+    .todo-input{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+.todo-title,.todo-des{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 25px;
+}
+.todo-title label,.todo-des label{
+    font-size:20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-block: 20px;
+}
+@media screen and (max-width:600px){
+    .todo-title label,.todo-des label{
+        font-size: 10px;
+        margin-block: 10px;
+    }
+}
+.todo-title input,.todo-des input{
+    height:50px;
+    width:400px;
+    border-radius: 0.25rem;
+    font-size: 16px;
+    font-weight: 500;
+    padding:10px;
+    border: none;
+    outline: none;
+}
+@media screen and (max-width:600px){
+    .todo-title input,.todo-des input{
+        width:300px;
+        font-size: 10px;
+        height:30px;
+    }
+}
+
+
+.todo-input button{
+    height:50px;
+    width:150px;
+    border: none;
+    outline:none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color:#B17BF1;
+    color:white;
+    cursor: pointer;
+}
+@media screen and (max-width:600px){
+    .todo-input button{
+      width:50px;
+      height:20px;
+      font-size: 10px;
+      margin-top: 10px;
+    }
+}
+.todo-input button:hover{
+    background: #7a2bdccd;
+}
+
+.button{
+    margin-block:50px;
+}
+@media screen and (max-width:600px){
+    .button{
+        margin-block:30px;
+       
+    }
+}
+
+.button button{
+    height:50px;
+    width:170px;
+    border: none;
+    outline:none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color:white;
+    color:#B17BF1;
+    margin:2px;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width:600px){
+    .button button{
+        width:100px;
+        height:30px;
+        font-size: 10px;
+       
+    }
+}
+.todoListItem{
+    background:#E4F0F6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:20px;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+@media screen and (max-width:600px){
+    .todoListItem{
+        gap:10px;
+       
+    }
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.items h2{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: normal;
+    color:#6800e8;
+    text-transform: uppercase;
+}
+@media screen and (max-width:600px){
+    .items h2{
+        font-size: 12px;  
+    }
+}
+
+
+.items div{
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0.7px;
+    width:fit-content;
+}
+@media screen and (max-width:600px){
+    .items div{
+        font-size: 10px;  
+    }
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.delete-icon{
+    font-size: 30px;
+
+}
+@media screen and (max-width:600px){
+    .delete-icon{
+        font-size: 20px;
+    }
+        
+    }
+
+.delete-icon:hover{
+    color: #B5321B;
+}
+.check-icon{
+    font-size: 30px;
+    color: #00725E
+}
+@media screen and (max-width:600px){
+    .check-icon{
+        font-size: 20px;
+    }
+        
+    }
+.check-icon:hover{
+    color: #005247;
+}
+.edit-icon{
+    font-size: 30px;
+}
+@media screen and (max-width:600px){
+    .edit-icon{
+        font-size: 20px;
+    }
+        
+    }
+.edit-icon:hover{
+    color:gray;
+}
+
+.modal{
+    padding:10px;
+    margin-top:30px;
+}
+.modal label{
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1;
+}
+.modal input{
+    width:200px;
+    height:30px;
+    outline:none;
+    font-size: 15px;
+    letter-spacing: 1;
+    font-weight: 500;
+    padding:10px;
+    margin:10px;
+}
+.modal input:focus{
+    border:2px solid violet;
+}
+.edit-btn{
+    float: right;
+    width:70px;
+    height:30px;
+    font-size: 16px;
+    background-color: #B17BF1;
+    color: #E4F0F6;
+    outline: none;
+    border-radius: 20px;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.repeat-icon{
+    font-size: 28px;
+}
+
+.err{
+    font-size: 14px;
+    color: red;
+    letter-spacing: 1;
+}
+
+.timeDate{
+    color:rgba(4, 176, 116, 0.805);
+    font-style: italic;
+    letter-spacing: 1;
+    
+}
