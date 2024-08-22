@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/todoHub/static/css/main.0541d6c2.css",
+    "main.js": "/todoHub/static/js/main.2a6dbfad.js",
+    "static/media/tick.wav": "/todoHub/static/media/tick.42b35516e6b2f3b242dd.wav",
+    "index.html": "/todoHub/index.html",
+    "main.0541d6c2.css.map": "/todoHub/static/css/main.0541d6c2.css.map",
+    "main.2a6dbfad.js.map": "/todoHub/static/js/main.2a6dbfad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0541d6c2.css",
+    "static/js/main.2a6dbfad.js"
+  ]
+}
